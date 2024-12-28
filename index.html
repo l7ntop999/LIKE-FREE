@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زيادة الإعجابات</title>
+    <script>
+        function showLoading() {
+            document.getElementById("loading").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h1>زيادة الإعجابات</h1>
+    <form action="/submit" method="post" onsubmit="showLoading()">
+        <label for="game_id">ادخل معرف اللعبة:</label>
+        <input type="text" id="game_id" name="game_id" required>
+        <button type="submit">زيادة الإعجابات</button>
+    </form>
+    <div id="loading" style="display:none;">جارٍ الاتصال بالسيرفر... يرجى الانتظار...</div>
+</body>
+</html>
